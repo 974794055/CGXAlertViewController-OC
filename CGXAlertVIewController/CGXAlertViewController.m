@@ -33,6 +33,22 @@ static void (^G_completionBlock)(int buttonindex);
 #pragma mark - 自定义样式
 + (void)showAlertViewControllerWithTitle:(NSString*)title message:(NSString*)message buttonTitles:(NSArray*)buttonTitles showViewController:(UIViewController*)vc completionBlock:(void(^)(NSString *Btntitle))completionBlock  preferredStyle:(UIAlertControllerStyle)style{
 #ifdef NSFoundationVersionNumber_iOS_8_0
+    
+    
+//    NSString *message = @"打印机未连接，去连接打印机?";
+//    
+//    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+//    style.lineSpacing = 5;
+//    style.lineBreakMode =NSLineBreakByWordWrapping;
+//    style.alignment =NSTextAlignmentCenter;
+//    NSDictionary *dic1 = @{NSParagraphStyleAttributeName:style};
+//    NSMutableAttributedString *alertControllerMessageStr = [[NSMutableAttributedString alloc] initWithString:message attributes:dic1];
+//    
+//    [alertControllerMessageStr addAttribute:NSForegroundColorAttributeName value:APP_NORMALTEXT_COLOER range:NSMakeRange(0, message.length)];
+//    [alertControllerMessageStr addAttribute:NSFontAttributeName value:APP_TEXTFONT range:NSMakeRange(0, message.length)];
+//    [alerVc setValue:alertControllerMessageStr forKey:@"attributedMessage"];
+//    
+    
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     for (NSString* titleStr in buttonTitles) {
         UIAlertAction* action;
