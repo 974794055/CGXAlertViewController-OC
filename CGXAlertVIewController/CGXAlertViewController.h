@@ -2,34 +2,63 @@
 //  CGXAlertViewController.h
 //  CGXAppStructure
 //
-//  Created by 曹贵鑫 on 2017/6/21.
-//  Copyright © 2017年 曹贵鑫. All rights reserved.
+//  Created by CGX on 2017/6/21.
+//  Copyright © 2017年 CGX. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CGXAlertTitleModel.h"
+#import "CGXAlertActionModel.h"
 
-typedef NS_ENUM(NSInteger, CGXAlertViewControllerContentStyle) {
-    CGXAlertViewControllerContentBtn, //中间显示
-    CGXAlertViewControllerContentTextBox   //文本框输入
-};
+
+@class CGXAlertViewController;
+
+// 标题配置block
+typedef void(^CGXAlertViewControllerTitleBlock)(CGXAlertTitleModel *titleModel);
+// 按钮点击事件block
+typedef void(^CGXAlertViewControllerSelectBlock)(NSString *title ,NSString *message ,NSString *btnStr);
+// 按钮配置block
+typedef void(^CGXAlertViewControllerActionBlock)(CGXAlertActionModel *actionModel);
 
 @interface CGXAlertViewController : NSObject
 
 
-//样式选择
-@property (nonatomic, assign) CGXAlertViewControllerContentStyle contentStyle;
-
-/*   无文本框
+/*   无文本框 中间显示
  title:             标题
  message:           提示语
  buttonTitles:      按钮选项数组
- completionBlock:   按钮点击返回block
- vc:                返回控制器
+ selectBlock:   按钮点击返回block
  */
 #pragma mark - 样式选择  返回的有title   中间显示
-+ (void)showAlertViewStyleWithTitle:(NSString*)title message:(NSString*)message buttonTitles:(NSArray*)buttonTitles titleBlock:(void(^)(NSString *titleStr ,NSString *messageStr ,NSString *btntitleStr))titleBlock showViewController:(UIViewController*)vc;
++ (void)showAlertTitle:(NSString*)title
+                   message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+                SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock;
+
++ (void)showAlertTitle:(NSString*)title
+                   message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+                TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+          ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+                SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock;
+/*     无文本框 底部显示
+ title:             标题
+ message:           提示语
+ buttonTitles:      按钮选项数组
+ selectBlock:   按钮点击返回block
+ */
 
 #pragma mark - 样式选择  返回的有title
-+ (void)showAlertViewStyleWithTitle:(NSString*)title message:(NSString*)message buttonTitles:(NSArray*)buttonTitles titleBlock:(void(^)(NSString *titleStr ,NSString *messageStr ,NSString *btntitleStr))titleBlock showViewController:(UIViewController*)vc preferredStyle:(UIAlertControllerStyle)style;
++ (void)showActionTitle:(NSString*)title
+                   message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+               SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock;
++ (void)showActionTitle:(NSString*)title
+                   message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+                TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+          ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+               SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock;
+
 @end

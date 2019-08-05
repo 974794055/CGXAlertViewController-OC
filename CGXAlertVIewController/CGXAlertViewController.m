@@ -2,89 +2,101 @@
 //  CGXAlertViewController.m
 //  CGXAppStructure
 //
-//  Created by 曹贵鑫 on 2017/6/21.
-//  Copyright © 2017年 曹贵鑫. All rights reserved.
+//  Created by CGX on 2017/6/21.
+//  Copyright © 2017年 CGX. All rights reserved.
 //
 
 #import "CGXAlertViewController.h"
+#import "UIAlertController+CGXAlertColor.h"
 
-static void (^G_completionBlock)(int buttonindex);
+@interface CGXAlertViewController()
+
+@end
 
 @implementation CGXAlertViewController
 
 #pragma mark - 样式选择  返回的有title   中间显示
-+ (void)showAlertViewStyleWithTitle:(NSString *)title message:(NSString *)message buttonTitles:(NSArray *)buttonTitles titleBlock:(void (^)(NSString *, NSString *, NSString *))titleBlock showViewController:(UIViewController *)vc
++ (void)showAlertTitle:(NSString *)title
+                   message:(NSString *)message
+              ButTitles:(NSArray*)butTitles
+               SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
 {
-    [CGXAlertViewController showAlertViewControllerWithTitle:title message:message buttonTitles:buttonTitles showViewController:vc completionBlock:^(NSString *Btntitle) {
-        if (titleBlock) {
-            titleBlock(title,message,Btntitle);
-        }
-    } preferredStyle:UIAlertControllerStyleAlert];
+    [CGXAlertViewController showAlertTitle:title message:message ButTitles:butTitles TitleBlock:nil ActionModleBlock:nil SelectBlock:selectBlock];
 }
-+ (void)showAlertViewStyleWithTitle:(NSString*)title message:(NSString*)message buttonTitles:(NSArray*)buttonTitles titleBlock:(void(^)(NSString *titleStr ,NSString *messageStr ,NSString *btntitleStr))titleBlock showViewController:(UIViewController*)vc preferredStyle:(UIAlertControllerStyle)style;
++ (void)showAlertTitle:(NSString*)title
+                   message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+                TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+          ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+               SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
 {
-    [CGXAlertViewController showAlertViewControllerWithTitle:title message:message buttonTitles:buttonTitles showViewController:vc completionBlock:^(NSString *Btntitle) {
-        if (titleBlock) {
-            titleBlock(title,message,Btntitle);
-        }
-    } preferredStyle:style];
+    [CGXAlertViewController showAlertViewControllerWithTitle:title message:message ButTitles:butTitles TitleBlock:titleBlock ActionModleBlock:actionModleBlock SelectBlock:selectBlock preferredStyle:UIAlertControllerStyleAlert];
+}
++ (void)showActionTitle:(NSString*)title
+                         message:(NSString*)message
+                   ButTitles:(NSArray*)butTitles
+                     SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+{
+    [CGXAlertViewController showActionTitle:title message:message ButTitles:butTitles TitleBlock:nil ActionModleBlock:nil SelectBlock:selectBlock];
+}
+
++ (void)showActionTitle:(NSString*)title
+                         message:(NSString*)message
+                    ButTitles:(NSArray*)butTitles
+                      TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+                ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+                     SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+{
+     [CGXAlertViewController showAlertViewControllerWithTitle:title message:message ButTitles:butTitles TitleBlock:titleBlock ActionModleBlock:actionModleBlock SelectBlock:selectBlock preferredStyle:UIAlertControllerStyleActionSheet];
 }
 
 #pragma mark - 自定义样式
-+ (void)showAlertViewControllerWithTitle:(NSString*)title message:(NSString*)message buttonTitles:(NSArray*)buttonTitles showViewController:(UIViewController*)vc completionBlock:(void(^)(NSString *Btntitle))completionBlock  preferredStyle:(UIAlertControllerStyle)style{
-#ifdef NSFoundationVersionNumber_iOS_8_0
-    
-    
-//    NSString *message = @"打印机未连接，去连接打印机?";
-//    
-//    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-//    style.lineSpacing = 5;
-//    style.lineBreakMode =NSLineBreakByWordWrapping;
-//    style.alignment =NSTextAlignmentCenter;
-//    NSDictionary *dic1 = @{NSParagraphStyleAttributeName:style};
-//    NSMutableAttributedString *alertControllerMessageStr = [[NSMutableAttributedString alloc] initWithString:message attributes:dic1];
-//    
-//    [alertControllerMessageStr addAttribute:NSForegroundColorAttributeName value:APP_NORMALTEXT_COLOER range:NSMakeRange(0, message.length)];
-//    [alertControllerMessageStr addAttribute:NSFontAttributeName value:APP_TEXTFONT range:NSMakeRange(0, message.length)];
-//    [alerVc setValue:alertControllerMessageStr forKey:@"attributedMessage"];
-//    
++ (void)showAlertViewControllerWithTitle:(NSString*)title
+                                 message:(NSString*)message
+                            ButTitles:(NSArray*)butTitles
+                              TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+                        ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+                         SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+                          preferredStyle:(UIAlertControllerStyle)style{
     
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
-    for (NSString* titleStr in buttonTitles) {
+    CGXAlertTitleModel *titleModel = [[CGXAlertTitleModel alloc] init];
+    alert.titleFont = titleModel.titleFont;
+    alert.titleColor = titleModel.titleColor;
+    alert.messageFont = titleModel.messageFont;
+    alert.messageColor = titleModel.messageColor;
+    if (titleBlock) {
+        titleBlock(titleModel);
+    }
+    alert.titleFont = titleModel.titleFont;
+    alert.titleColor = titleModel.titleColor;
+    alert.messageFont = titleModel.messageFont;
+    alert.messageColor = titleModel.messageColor;
+    for (NSString* titleStr in butTitles) {
         UIAlertAction* action;
-        if ([titleStr isEqualToString:@"取消"] || [titleStr isEqualToString:@"cancel"]) {
-            action = [UIAlertAction actionWithTitle:titleStr style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-                if (completionBlock) {
-                    completionBlock(titleStr);
-                }
-            }];
-        }else {
-            action = [UIAlertAction actionWithTitle:titleStr style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                if (completionBlock) {
-                    completionBlock(titleStr);
-                }
-            }];
+        CGXAlertActionModel *item = [[CGXAlertActionModel alloc] init];
+        item.title = titleStr;
+        item.titleColor = [UIColor blackColor];
+        item.style = UIAlertActionStyleDefault;
+        if ([item.title isEqualToString:@"取消"] || [item.title isEqualToString:@"cancel"]) {
+            item.style = UIAlertActionStyleCancel;
         }
+        if (actionModleBlock) {
+            actionModleBlock(item);
+            item.title = titleStr;
+            item.titleColor = [UIColor blackColor];
+            item.style = UIAlertActionStyleDefault;
+        }
+        action = [UIAlertAction actionWithTitle:item.title style:item.style handler:^(UIAlertAction * _Nonnull action) {
+            if (selectBlock) {
+                selectBlock(title,message,item.title);
+            }
+        }];
+        [action setValue:item.titleColor forKey:@"_titleTextColor"];
         [alert addAction:action];
     }
-    [vc presentViewController:alert animated:YES completion:nil];
-#else
-    G_completionBlock = [completionblock copy];
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:strtitle message:strmessage delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
-    for (NSString *key in buttontitles) {
-        [alert addButtonWithTitle:key];
-    }
-    [alert show];
-#endif
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
-#pragma clang diagnostic ignored "-Wdeprecated"
-+(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (G_completionBlock) {
-        G_completionBlock((int)buttonIndex);
-    }
-}
-
 
 
 @end
