@@ -83,9 +83,6 @@
         }
         if (actionModleBlock) {
             actionModleBlock(item);
-            item.title = titleStr;
-            item.titleColor = [UIColor blackColor];
-            item.style = UIAlertActionStyleDefault;
         }
         action = [UIAlertAction actionWithTitle:item.title style:item.style handler:^(UIAlertAction * _Nonnull action) {
             if (selectBlock) {

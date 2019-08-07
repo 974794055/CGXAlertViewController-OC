@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CGXAlertViewController"    #存储库名称
-  s.version      = "0.0.5"      #版本号，与tag值一致
+  s.version      = "1.0.0"      #版本号，与tag值一致
   s.summary      = "a CGXAlertViewController demo弹框"  #简介
   s.description  = "a CGXAlertViewController弹框"  #描述
   s.homepage     = "https://github.com/974794055/CGXAlertViewController-OC"      #项目主页，不是git地址
