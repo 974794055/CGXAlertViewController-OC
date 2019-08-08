@@ -1,3 +1,3 @@
-[submodule "CGXAlertViewControllerDemo"]
-	path = CGXAlertViewControllerDemo
-	url = https://github.com/974794055/CGXAlertViewControllerDemo.git
+[submodule "CGXAlertViewController-OC"]
+	path = CGXAlertViewController-OC
+	url = https://github.com/974794055/CGXAlertViewController-OC.git
