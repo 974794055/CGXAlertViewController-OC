@@ -20,8 +20,6 @@
     // Do any additional setup after loading the view.
     
     
-    
-    
     [CGXAlertViewController showAlertTitle:@"温馨提示" message:@"过期啦" ButTitles:@[@"取消",@"确认"] SelectBlock:^(NSString *title, NSString *message, NSString *btnStr) {
         NSLog(@"%@--%@--%@",title,message,btnStr);
     }];

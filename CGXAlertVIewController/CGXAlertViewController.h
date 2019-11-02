@@ -5,6 +5,14 @@
 //  Created by CGX on 2017/6/21.
 //  Copyright © 2017年 CGX. All rights reserved.
 //
+/**
+下载链接：https://github.com/974794055/CGXAlertViewController-OC.git
+QQ号：974794055
+群名称：
+CGXAlertViewController交流群
+群   号：
+版本： 1.0.2
+*/
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
