@@ -58,7 +58,9 @@
                         ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
                          SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
                           preferredStyle:(UIAlertControllerStyle)style{
-    
+    if ([self getIsIpad]) {
+        style = UIAlertControllerStyleAlert;
+    }
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     CGXAlertTitleModel *titleModel = [[CGXAlertTitleModel alloc] init];
     alert.titleFont = titleModel.titleFont;
@@ -80,6 +82,7 @@
         item.style = UIAlertActionStyleDefault;
         if ([item.title isEqualToString:@"取消"] || [item.title isEqualToString:@"cancel"]) {
             item.style = UIAlertActionStyleCancel;
+            item.titleColor = [UIColor redColor];
         }
         if (actionModleBlock) {
             actionModleBlock(item);
@@ -92,8 +95,19 @@
         [action setValue:item.titleColor forKey:@"_titleTextColor"];
         [alert addAction:action];
     }
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+    });
 }
 
++ (BOOL)getIsIpad
+{
+    BOOL isIpad = NO;
+    if([[UIDevice currentDevice].model isEqualToString:@"iPad"] || [[UIDevice currentDevice] userInterfaceIdiom] ==
+       UIUserInterfaceIdiomPad){
+        isIpad = YES;
+    }
+    return isIpad;
+}
 
 @end

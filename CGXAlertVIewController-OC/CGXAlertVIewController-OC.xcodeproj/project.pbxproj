@@ -116,7 +116,7 @@
 			dependencies = (
 			);
 			name = "CGXAlertVIewController-OC";
-			productName = CGXAlertVIewController-OC;
+			productName = "CGXAlertVIewController-OC";
 			productReference = 0499B34C22CC809700CA1767 /* CGXAlertVIewController-OC.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -320,13 +320,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AA9R26989C;
-				INFOPLIST_FILE = CGXAlertVIewController-OC/Info.plist;
+				INFOPLIST_FILE = "CGXAlertVIewController-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Work.CGX.CGXAlertVIewController-OC;
+				PRODUCT_BUNDLE_IDENTIFIER = "Work.CGX.CGXAlertVIewController-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,13 +338,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AA9R26989C;
-				INFOPLIST_FILE = CGXAlertVIewController-OC/Info.plist;
+				INFOPLIST_FILE = "CGXAlertVIewController-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Work.CGX.CGXAlertVIewController-OC;
+				PRODUCT_BUNDLE_IDENTIFIER = "Work.CGX.CGXAlertVIewController-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
