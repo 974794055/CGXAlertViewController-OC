@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		209C5E6D4CF43EC2C5CCA1275990DE5E /* CGXAlertTitleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 150D365F409744B599AE49CF3459B0AD /* CGXAlertTitleModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23A3405AC497C151BD6A190C0F5D0DFF /* CGXAlertViewController-OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B864DD1802C3126A7F134AD017E829 /* CGXAlertViewController-OC-dummy.m */; };
+		33959D032941B907AA2E1D0F5BC29B6A /* CGXAlertTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F660D6B5FD48A5A7F80F4241785E608 /* CGXAlertTitleModel.m */; };
+		848803911C9203CB289F2EFFA563C1C6 /* CGXAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 25669B3A96FBCE16E86A9935E2507A37 /* CGXAlertViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90C920C0D478783C588B4F337504C378 /* CGXAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA665E6CCD0B38EB27A1E5993B9F14B /* CGXAlertViewController.m */; };
+		942879156FEDF3CDF8B8B7601247F8E5 /* CGXAlertActionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCE205B3C71B92BBABD804F3A235F05 /* CGXAlertActionModel.m */; };
+		B535EF16B3FFA7D88D8895DF24A5A204 /* CGXAlertActionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF8BEC50845442542CCAF5D42085872 /* CGXAlertActionModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE6712A452F8E24265A6A2ED648C3803 /* UIAlertController+CGXAlertColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2895A8C99C91E581C8782C8FEFD5BEA1 /* UIAlertController+CGXAlertColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9AFB8BCB4E6AA0698DCF68F026774C1 /* Pods-CGXAlertVIewController-OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F6413AF37C1DC43529352618C4253 /* Pods-CGXAlertVIewController-OC-dummy.m */; };
+		DB940E9BC8D7824D5E9E73C46EDE8182 /* UIAlertController+CGXAlertColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D06148FC5F72BCF34EC0C60E0452C /* UIAlertController+CGXAlertColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A2992CB9146732424A6B782919F060E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D24875731DC00EEEA7005C72441B95A;
+			remoteInfo = "CGXAlertViewController-OC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00781586EDA9F5406C42B2F4F667B524 /* Pods-CGXAlertVIewController-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGXAlertVIewController-OC.release.xcconfig"; sourceTree = "<group>"; };
+		0216E6D15B59A8DCE02CF87B2CFEECA5 /* libPods-CGXAlertVIewController-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CGXAlertVIewController-OC.a"; path = "libPods-CGXAlertVIewController-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EA8D907FDECE3B06BA9F472C3A130B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0781F76E6947AEB07CE737CF76A37926 /* CGXAlertViewController-OC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "CGXAlertViewController-OC.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		150D365F409744B599AE49CF3459B0AD /* CGXAlertTitleModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAlertTitleModel.h; path = CGXAlertVIewController/CGXAlertTitleModel.h; sourceTree = "<group>"; };
+		25669B3A96FBCE16E86A9935E2507A37 /* CGXAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAlertViewController.h; path = CGXAlertVIewController/CGXAlertViewController.h; sourceTree = "<group>"; };
+		26682D0024058543BB31D54C59227DC5 /* CGXAlertViewController-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CGXAlertViewController-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		2895A8C99C91E581C8782C8FEFD5BEA1 /* UIAlertController+CGXAlertColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+CGXAlertColor.h"; path = "CGXAlertVIewController/UIAlertController+CGXAlertColor.h"; sourceTree = "<group>"; };
+		3C27569EB64F142D25CB4938703B7E89 /* CGXAlertViewController-OC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGXAlertViewController-OC-prefix.pch"; sourceTree = "<group>"; };
+		488E837DD3EC1DFAE1D01F9062F12A88 /* libCGXAlertViewController-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libCGXAlertViewController-OC.a"; path = "libCGXAlertViewController-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B864DD1802C3126A7F134AD017E829 /* CGXAlertViewController-OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CGXAlertViewController-OC-dummy.m"; sourceTree = "<group>"; };
+		5E9D06148FC5F72BCF34EC0C60E0452C /* UIAlertController+CGXAlertColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+CGXAlertColor.m"; path = "CGXAlertVIewController/UIAlertController+CGXAlertColor.m"; sourceTree = "<group>"; };
+		6C0C111AC59ECB1C0368BBF82F8B4BD1 /* Pods-CGXAlertVIewController-OC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CGXAlertVIewController-OC-acknowledgements.plist"; sourceTree = "<group>"; };
+		71E276FF3394B0E442C3C69DB4D63494 /* Pods-CGXAlertVIewController-OC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CGXAlertVIewController-OC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7AB0EC6D36BCF6713A02E290772D730D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F660D6B5FD48A5A7F80F4241785E608 /* CGXAlertTitleModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAlertTitleModel.m; path = CGXAlertVIewController/CGXAlertTitleModel.m; sourceTree = "<group>"; };
+		C4F948236A604AF8D2DF33FBFB4A3452 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGXAlertVIewController-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		DAF8BEC50845442542CCAF5D42085872 /* CGXAlertActionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAlertActionModel.h; path = CGXAlertVIewController/CGXAlertActionModel.h; sourceTree = "<group>"; };
+		DFA665E6CCD0B38EB27A1E5993B9F14B /* CGXAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAlertViewController.m; path = CGXAlertVIewController/CGXAlertViewController.m; sourceTree = "<group>"; };
+		E8B2D5D2E0C36B2AC78F30F82A176052 /* CGXAlertViewController-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CGXAlertViewController-OC.release.xcconfig"; sourceTree = "<group>"; };
+		F83F6413AF37C1DC43529352618C4253 /* Pods-CGXAlertVIewController-OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CGXAlertVIewController-OC-dummy.m"; sourceTree = "<group>"; };
+		FFCE205B3C71B92BBABD804F3A235F05 /* CGXAlertActionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAlertActionModel.m; path = CGXAlertVIewController/CGXAlertActionModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31FD3E98E84061C401DFD83DBCAE6205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7F1CA4112DE244D34D691655B47989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DDD8E08B928352070450512F0BF756D /* Pods-CGXAlertVIewController-OC */ = {
+			isa = PBXGroup;
+			children = (
+				71E276FF3394B0E442C3C69DB4D63494 /* Pods-CGXAlertVIewController-OC-acknowledgements.markdown */,
+				6C0C111AC59ECB1C0368BBF82F8B4BD1 /* Pods-CGXAlertVIewController-OC-acknowledgements.plist */,
+				F83F6413AF37C1DC43529352618C4253 /* Pods-CGXAlertVIewController-OC-dummy.m */,
+				C4F948236A604AF8D2DF33FBFB4A3452 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */,
+				00781586EDA9F5406C42B2F4F667B524 /* Pods-CGXAlertVIewController-OC.release.xcconfig */,
+			);
+			name = "Pods-CGXAlertVIewController-OC";
+			path = "Target Support Files/Pods-CGXAlertVIewController-OC";
+			sourceTree = "<group>";
+		};
+		56B884E375DCB9C4F2F8308283971BF0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40080D8948F5E6FAF89819FA6802315 /* CGXAlertViewController-OC */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		699F2FD707237A823F067A32A62C4C6B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0781F76E6947AEB07CE737CF76A37926 /* CGXAlertViewController-OC.podspec */,
+				7AB0EC6D36BCF6713A02E290772D730D /* LICENSE */,
+				05EA8D907FDECE3B06BA9F472C3A130B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		81427965EBA8319D0120E2270ACB6B3C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51B864DD1802C3126A7F134AD017E829 /* CGXAlertViewController-OC-dummy.m */,
+				3C27569EB64F142D25CB4938703B7E89 /* CGXAlertViewController-OC-prefix.pch */,
+				26682D0024058543BB31D54C59227DC5 /* CGXAlertViewController-OC.debug.xcconfig */,
+				E8B2D5D2E0C36B2AC78F30F82A176052 /* CGXAlertViewController-OC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "CGXAlertVIewController-OC/Pods/Target Support Files/CGXAlertViewController-OC";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				56B884E375DCB9C4F2F8308283971BF0 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				FAE2FEE1FBB5E1B494C22AFD2453F28B /* Products */,
+				E9C33FE12A2FE71D171490224031E525 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C33FE12A2FE71D171490224031E525 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DDD8E08B928352070450512F0BF756D /* Pods-CGXAlertVIewController-OC */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F40080D8948F5E6FAF89819FA6802315 /* CGXAlertViewController-OC */ = {
+			isa = PBXGroup;
+			children = (
+				DAF8BEC50845442542CCAF5D42085872 /* CGXAlertActionModel.h */,
+				FFCE205B3C71B92BBABD804F3A235F05 /* CGXAlertActionModel.m */,
+				150D365F409744B599AE49CF3459B0AD /* CGXAlertTitleModel.h */,
+				9F660D6B5FD48A5A7F80F4241785E608 /* CGXAlertTitleModel.m */,
+				25669B3A96FBCE16E86A9935E2507A37 /* CGXAlertViewController.h */,
+				DFA665E6CCD0B38EB27A1E5993B9F14B /* CGXAlertViewController.m */,
+				2895A8C99C91E581C8782C8FEFD5BEA1 /* UIAlertController+CGXAlertColor.h */,
+				5E9D06148FC5F72BCF34EC0C60E0452C /* UIAlertController+CGXAlertColor.m */,
+				699F2FD707237A823F067A32A62C4C6B /* Pod */,
+				81427965EBA8319D0120E2270ACB6B3C /* Support Files */,
+			);
+			name = "CGXAlertViewController-OC";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FAE2FEE1FBB5E1B494C22AFD2453F28B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				488E837DD3EC1DFAE1D01F9062F12A88 /* libCGXAlertViewController-OC.a */,
+				0216E6D15B59A8DCE02CF87B2CFEECA5 /* libPods-CGXAlertVIewController-OC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		516C1598E34CB5D29DDB6A89E14DD706 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D77DD10B4443160CE6557D04851FE462 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B535EF16B3FFA7D88D8895DF24A5A204 /* CGXAlertActionModel.h in Headers */,
+				209C5E6D4CF43EC2C5CCA1275990DE5E /* CGXAlertTitleModel.h in Headers */,
+				848803911C9203CB289F2EFFA563C1C6 /* CGXAlertViewController.h in Headers */,
+				BE6712A452F8E24265A6A2ED648C3803 /* UIAlertController+CGXAlertColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D24875731DC00EEEA7005C72441B95A /* CGXAlertViewController-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801CB61E334457AAF04C9B007808DB86 /* Build configuration list for PBXNativeTarget "CGXAlertViewController-OC" */;
+			buildPhases = (
+				D77DD10B4443160CE6557D04851FE462 /* Headers */,
+				BDEA55937F4B1D2184964BA34E81A535 /* Sources */,
+				CF7F1CA4112DE244D34D691655B47989 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CGXAlertViewController-OC";
+			productName = "CGXAlertViewController-OC";
+			productReference = 488E837DD3EC1DFAE1D01F9062F12A88 /* libCGXAlertViewController-OC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD2D55FF933FA08BCDCF10AA2D4A88AC /* Pods-CGXAlertVIewController-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 564AB31823F808800FD7877344116C2F /* Build configuration list for PBXNativeTarget "Pods-CGXAlertVIewController-OC" */;
+			buildPhases = (
+				516C1598E34CB5D29DDB6A89E14DD706 /* Headers */,
+				59B7B4948B14E8A2EBE015113DB68190 /* Sources */,
+				31FD3E98E84061C401DFD83DBCAE6205 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC0984E8EAD42DEC0F63EE30A8A1DFA5 /* PBXTargetDependency */,
+			);
+			name = "Pods-CGXAlertVIewController-OC";
+			productName = "Pods-CGXAlertVIewController-OC";
+			productReference = 0216E6D15B59A8DCE02CF87B2CFEECA5 /* libPods-CGXAlertVIewController-OC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FAE2FEE1FBB5E1B494C22AFD2453F28B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D24875731DC00EEEA7005C72441B95A /* CGXAlertViewController-OC */,
+				DD2D55FF933FA08BCDCF10AA2D4A88AC /* Pods-CGXAlertVIewController-OC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59B7B4948B14E8A2EBE015113DB68190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AFB8BCB4E6AA0698DCF68F026774C1 /* Pods-CGXAlertVIewController-OC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEA55937F4B1D2184964BA34E81A535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942879156FEDF3CDF8B8B7601247F8E5 /* CGXAlertActionModel.m in Sources */,
+				33959D032941B907AA2E1D0F5BC29B6A /* CGXAlertTitleModel.m in Sources */,
+				23A3405AC497C151BD6A190C0F5D0DFF /* CGXAlertViewController-OC-dummy.m in Sources */,
+				90C920C0D478783C588B4F337504C378 /* CGXAlertViewController.m in Sources */,
+				DB940E9BC8D7824D5E9E73C46EDE8182 /* UIAlertController+CGXAlertColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC0984E8EAD42DEC0F63EE30A8A1DFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CGXAlertViewController-OC";
+			target = 1D24875731DC00EEEA7005C72441B95A /* CGXAlertViewController-OC */;
+			targetProxy = 6A2992CB9146732424A6B782919F060E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AB3C142D3E749126FBEA5407324B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B2D5D2E0C36B2AC78F30F82A176052 /* CGXAlertViewController-OC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CGXAlertViewController-OC/CGXAlertViewController-OC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CGXAlertViewController_OC;
+				PRODUCT_NAME = "CGXAlertViewController-OC";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66E64BE35135AB8C7173A753D84ACF5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26682D0024058543BB31D54C59227DC5 /* CGXAlertViewController-OC.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CGXAlertViewController-OC/CGXAlertViewController-OC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CGXAlertViewController_OC;
+				PRODUCT_NAME = "CGXAlertViewController-OC";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8927A2EF35C03D4AA3657153C1B05118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00781586EDA9F5406C42B2F4F667B524 /* Pods-CGXAlertVIewController-OC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD96CAC58EA31A7A98E7F54AC1243D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F948236A604AF8D2DF33FBFB4A3452 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		564AB31823F808800FD7877344116C2F /* Build configuration list for PBXNativeTarget "Pods-CGXAlertVIewController-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD96CAC58EA31A7A98E7F54AC1243D91 /* Debug */,
+				8927A2EF35C03D4AA3657153C1B05118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801CB61E334457AAF04C9B007808DB86 /* Build configuration list for PBXNativeTarget "CGXAlertViewController-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66E64BE35135AB8C7173A753D84ACF5E /* Debug */,
+				0AB3C142D3E749126FBEA5407324B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

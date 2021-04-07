@@ -17,46 +17,46 @@
 
 #pragma mark - 样式选择  返回的有title   中间显示
 + (void)showAlertTitle:(NSString *)title
-                   message:(NSString *)message
-              ButTitles:(NSArray*)butTitles
-               SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+               message:(NSString *)message
+             ButTitles:(NSArray*)butTitles
+           SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
 {
     [CGXAlertViewController showAlertTitle:title message:message ButTitles:butTitles TitleBlock:nil ActionModleBlock:nil SelectBlock:selectBlock];
 }
 + (void)showAlertTitle:(NSString*)title
-                   message:(NSString*)message
-              ButTitles:(NSArray*)butTitles
-                TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
-          ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
-               SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+               message:(NSString*)message
+             ButTitles:(NSArray*)butTitles
+            TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+      ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+           SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
 {
     [CGXAlertViewController showAlertViewControllerWithTitle:title message:message ButTitles:butTitles TitleBlock:titleBlock ActionModleBlock:actionModleBlock SelectBlock:selectBlock preferredStyle:UIAlertControllerStyleAlert];
 }
 + (void)showActionTitle:(NSString*)title
-                         message:(NSString*)message
-                   ButTitles:(NSArray*)butTitles
-                     SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+                message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+            SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
 {
     [CGXAlertViewController showActionTitle:title message:message ButTitles:butTitles TitleBlock:nil ActionModleBlock:nil SelectBlock:selectBlock];
 }
 
 + (void)showActionTitle:(NSString*)title
-                         message:(NSString*)message
-                    ButTitles:(NSArray*)butTitles
-                      TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
-                ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
-                     SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+                message:(NSString*)message
+              ButTitles:(NSArray*)butTitles
+             TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
+       ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
+            SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
 {
-     [CGXAlertViewController showAlertViewControllerWithTitle:title message:message ButTitles:butTitles TitleBlock:titleBlock ActionModleBlock:actionModleBlock SelectBlock:selectBlock preferredStyle:UIAlertControllerStyleActionSheet];
+    [CGXAlertViewController showAlertViewControllerWithTitle:title message:message ButTitles:butTitles TitleBlock:titleBlock ActionModleBlock:actionModleBlock SelectBlock:selectBlock preferredStyle:UIAlertControllerStyleActionSheet];
 }
 
 #pragma mark - 自定义样式
 + (void)showAlertViewControllerWithTitle:(NSString*)title
                                  message:(NSString*)message
-                            ButTitles:(NSArray*)butTitles
+                               ButTitles:(NSArray*)butTitles
                               TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
                         ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
-                         SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
+                             SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
                           preferredStyle:(UIAlertControllerStyle)style{
     if ([self getIsIpad]) {
         style = UIAlertControllerStyleAlert;
@@ -94,6 +94,11 @@
         }];
         [action setValue:item.titleColor forKey:@"_titleTextColor"];
         [alert addAction:action];
+    }
+    if ([self getIsIpad]) {
+        UIPopoverPresentationController *popPresenter = [alert popoverPresentationController];
+        popPresenter.sourceView = [UIApplication sharedApplication].keyWindow.rootViewController.view;
+        popPresenter.sourceRect = [UIApplication sharedApplication].keyWindow.rootViewController.view.bounds;
     }
     dispatch_async(dispatch_get_main_queue(), ^{
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];

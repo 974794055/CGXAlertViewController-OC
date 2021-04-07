@@ -2,7 +2,7 @@
 //  CGXAlertTitleModel.m
 //  CGXAlertVIewControllerDemo
 //
-//  Created by MacMini-1 on 2019/8/5.
+//  Created by CGX on 2019/8/5.
 //  Copyright © 2019 CGX. All rights reserved.
 //
 

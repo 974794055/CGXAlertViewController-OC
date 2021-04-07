@@ -13,10 +13,10 @@
 		0499B35922CC809800CA1767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0499B35822CC809800CA1767 /* Assets.xcassets */; };
 		0499B35C22CC809800CA1767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0499B35A22CC809800CA1767 /* LaunchScreen.storyboard */; };
 		0499B35F22CC809800CA1767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499B35E22CC809800CA1767 /* main.m */; };
-		0499B36822CC80D500CA1767 /* CGXAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499B36722CC80D500CA1767 /* CGXAlertViewController.m */; };
-		0499B36E22CC81C800CA1767 /* UIAlertController+CGXAlertColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499B36D22CC81C800CA1767 /* UIAlertController+CGXAlertColor.m */; };
-		0499B37422CC832700CA1767 /* CGXAlertActionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499B37322CC832700CA1767 /* CGXAlertActionModel.m */; };
-		04C6250822F7DC0E00491FD6 /* CGXAlertTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6250722F7DC0E00491FD6 /* CGXAlertTitleModel.m */; };
+		B51493E325ED1A4A00DBB15A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B51493E025ED1A4A00DBB15A /* README.md */; };
+		B51493E425ED1A4A00DBB15A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B51493E125ED1A4A00DBB15A /* LICENSE */; };
+		B51493E525ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B51493E225ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec */; };
+		D856B8F368766F86A2422A98 /* libPods-CGXAlertVIewController-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E26564131543C7732ECDB5 /* libPods-CGXAlertVIewController-OC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +30,12 @@
 		0499B35B22CC809800CA1767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0499B35D22CC809800CA1767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0499B35E22CC809800CA1767 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0499B36622CC80D500CA1767 /* CGXAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXAlertViewController.h; sourceTree = "<group>"; };
-		0499B36722CC80D500CA1767 /* CGXAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXAlertViewController.m; sourceTree = "<group>"; };
-		0499B36C22CC81C800CA1767 /* UIAlertController+CGXAlertColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CGXAlertColor.h"; sourceTree = "<group>"; };
-		0499B36D22CC81C800CA1767 /* UIAlertController+CGXAlertColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CGXAlertColor.m"; sourceTree = "<group>"; };
-		0499B37222CC832700CA1767 /* CGXAlertActionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGXAlertActionModel.h; sourceTree = "<group>"; };
-		0499B37322CC832700CA1767 /* CGXAlertActionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGXAlertActionModel.m; sourceTree = "<group>"; };
-		04C6250622F7DC0E00491FD6 /* CGXAlertTitleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGXAlertTitleModel.h; sourceTree = "<group>"; };
-		04C6250722F7DC0E00491FD6 /* CGXAlertTitleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGXAlertTitleModel.m; sourceTree = "<group>"; };
+		B51493E025ED1A4A00DBB15A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		B51493E125ED1A4A00DBB15A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
+		B51493E225ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CGXAlertViewController-OC.podspec"; path = "../../../CGXAlertViewController-OC.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C4E26564131543C7732ECDB5 /* libPods-CGXAlertVIewController-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CGXAlertVIewController-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA22DD4CEEF66CA60E3D6676 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGXAlertVIewController-OC.debug.xcconfig"; path = "Target Support Files/Pods-CGXAlertVIewController-OC/Pods-CGXAlertVIewController-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		D278F5412DC290B6A1B0CBFA /* Pods-CGXAlertVIewController-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGXAlertVIewController-OC.release.xcconfig"; path = "Target Support Files/Pods-CGXAlertVIewController-OC/Pods-CGXAlertVIewController-OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D856B8F368766F86A2422A98 /* libPods-CGXAlertVIewController-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +55,8 @@
 			children = (
 				0499B34E22CC809700CA1767 /* CGXAlertVIewController-OC */,
 				0499B34D22CC809700CA1767 /* Products */,
+				E2D6D1D0697F57D876A9F959 /* Pods */,
+				B361BE8A406D5AD196A06704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,11 +71,11 @@
 		0499B34E22CC809700CA1767 /* CGXAlertVIewController-OC */ = {
 			isa = PBXGroup;
 			children = (
+				B51493DF25ED1A3C00DBB15A /* Podspec Metadata */,
 				0499B34F22CC809700CA1767 /* AppDelegate.h */,
 				0499B35022CC809700CA1767 /* AppDelegate.m */,
 				0499B35222CC809700CA1767 /* ViewController.h */,
 				0499B35322CC809700CA1767 /* ViewController.m */,
-				0499B36522CC80D500CA1767 /* CGXAlertVIewController */,
 				0499B35522CC809700CA1767 /* Main.storyboard */,
 				0499B35822CC809800CA1767 /* Assets.xcassets */,
 				0499B35A22CC809800CA1767 /* LaunchScreen.storyboard */,
@@ -84,20 +85,31 @@
 			path = "CGXAlertVIewController-OC";
 			sourceTree = "<group>";
 		};
-		0499B36522CC80D500CA1767 /* CGXAlertVIewController */ = {
+		B361BE8A406D5AD196A06704 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0499B36622CC80D500CA1767 /* CGXAlertViewController.h */,
-				0499B36722CC80D500CA1767 /* CGXAlertViewController.m */,
-				0499B37222CC832700CA1767 /* CGXAlertActionModel.h */,
-				0499B37322CC832700CA1767 /* CGXAlertActionModel.m */,
-				04C6250622F7DC0E00491FD6 /* CGXAlertTitleModel.h */,
-				04C6250722F7DC0E00491FD6 /* CGXAlertTitleModel.m */,
-				0499B36C22CC81C800CA1767 /* UIAlertController+CGXAlertColor.h */,
-				0499B36D22CC81C800CA1767 /* UIAlertController+CGXAlertColor.m */,
+				C4E26564131543C7732ECDB5 /* libPods-CGXAlertVIewController-OC.a */,
 			);
-			name = CGXAlertVIewController;
-			path = ../../CGXAlertVIewController;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51493DF25ED1A3C00DBB15A /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				B51493E225ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec */,
+				B51493E125ED1A4A00DBB15A /* LICENSE */,
+				B51493E025ED1A4A00DBB15A /* README.md */,
+			);
+			path = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E2D6D1D0697F57D876A9F959 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA22DD4CEEF66CA60E3D6676 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */,
+				D278F5412DC290B6A1B0CBFA /* Pods-CGXAlertVIewController-OC.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0499B36222CC809800CA1767 /* Build configuration list for PBXNativeTarget "CGXAlertVIewController-OC" */;
 			buildPhases = (
+				018B65674A3404AEE8EB7BC6 /* [CP] Check Pods Manifest.lock */,
 				0499B34822CC809700CA1767 /* Sources */,
 				0499B34922CC809700CA1767 /* Frameworks */,
 				0499B34A22CC809700CA1767 /* Resources */,
@@ -159,22 +172,46 @@
 			files = (
 				0499B35C22CC809800CA1767 /* LaunchScreen.storyboard in Resources */,
 				0499B35922CC809800CA1767 /* Assets.xcassets in Resources */,
+				B51493E325ED1A4A00DBB15A /* README.md in Resources */,
+				B51493E525ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec in Resources */,
 				0499B35722CC809700CA1767 /* Main.storyboard in Resources */,
+				B51493E425ED1A4A00DBB15A /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		018B65674A3404AEE8EB7BC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CGXAlertVIewController-OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0499B34822CC809700CA1767 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C6250822F7DC0E00491FD6 /* CGXAlertTitleModel.m in Sources */,
-				0499B36822CC80D500CA1767 /* CGXAlertViewController.m in Sources */,
-				0499B37422CC832700CA1767 /* CGXAlertActionModel.m in Sources */,
 				0499B35422CC809700CA1767 /* ViewController.m in Sources */,
-				0499B36E22CC81C800CA1767 /* UIAlertController+CGXAlertColor.m in Sources */,
 				0499B35F22CC809800CA1767 /* main.m in Sources */,
 				0499B35122CC809700CA1767 /* AppDelegate.m in Sources */,
 			);
@@ -316,6 +353,7 @@
 		};
 		0499B36322CC809800CA1767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA22DD4CEEF66CA60E3D6676 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +372,7 @@
 		};
 		0499B36422CC809800CA1767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D278F5412DC290B6A1B0CBFA /* Pods-CGXAlertVIewController-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

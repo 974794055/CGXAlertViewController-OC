@@ -1,0 +1,16 @@
+PODS:
+  - CGXAlertViewController-OC (1.0.3)
+
+DEPENDENCIES:
+  - CGXAlertViewController-OC (from `../`)
+
+EXTERNAL SOURCES:
+  CGXAlertViewController-OC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CGXAlertViewController-OC: b6fe848c7d30f90c00ea6b413457a317ecc58fe8
+
+PODFILE CHECKSUM: 9b80ea4dfc7073303b3ad28a34e2a4599f6eff54
+
+COCOAPODS: 1.9.3

@@ -2,7 +2,7 @@
 //  ViewController.m
 //  CGXAlertVIewControllerDemo
 //
-//  Created by MacMini-1 on 2019/7/3.
+//  Created by CGX on 2019/7/3.
 //  Copyright © 2019 CGX. All rights reserved.
 //
 
@@ -64,10 +64,6 @@
                       @"Alert修改色调",
                       @"QQ登录",
                       @"微信好友",
-                      @"微信朋友圈",
-                      @"微信登录",
-                      @"微博分享",
-                      @"微博登录",
                       nil];
     [_tableView reloadData];
 }
@@ -129,7 +125,7 @@
             titleModel.titleFont = [UIFont systemFontOfSize:20];
             titleModel.titleColor = [UIColor blackColor];
             titleModel.messageFont = [UIFont systemFontOfSize:14];
-            titleModel.messageColor = [UIColor yellowColor];
+            titleModel.messageColor = [UIColor redColor];
         } ActionModleBlock:^(CGXAlertActionModel *actionModel) {
             actionModel.titleColor = [UIColor redColor];
         } SelectBlock:^(NSString *title, NSString *message, NSString *btnStr) {
