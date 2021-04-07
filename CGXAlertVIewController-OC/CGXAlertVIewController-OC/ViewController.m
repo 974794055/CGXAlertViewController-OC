@@ -58,7 +58,6 @@
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     [self.view addSubview:_tableView];
-    
     self.dataArray = [NSMutableArray arrayWithObjects:
                       @"Alert默认色调",
                       @"Alert修改色调",

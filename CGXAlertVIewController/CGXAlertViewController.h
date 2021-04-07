@@ -12,12 +12,10 @@ QQ号：974794055
 群   号：
 版本： 1.0.4
 */
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "CGXAlertTitleModel.h"
 #import "CGXAlertActionModel.h"
-
 
 @class CGXAlertViewController;
 
