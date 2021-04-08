@@ -44,6 +44,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
     
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-kTopHeight-kTabBarHeight) style:UITableViewStyleGrouped];;
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.showsHorizontalScrollIndicator = NO;
