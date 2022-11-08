@@ -57,23 +57,17 @@
                               TitleBlock:(CGXAlertViewControllerTitleBlock)titleBlock
                         ActionModleBlock:(CGXAlertViewControllerActionBlock)actionModleBlock
                              SelectBlock:(CGXAlertViewControllerSelectBlock)selectBlock
-                          preferredStyle:(UIAlertControllerStyle)style{
-    if ([self getIsIpad]) {
-        style = UIAlertControllerStyleAlert;
-    }
+                          preferredStyle:(UIAlertControllerStyle)style
+{
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
-    CGXAlertTitleModel *titleModel = [[CGXAlertTitleModel alloc] init];
-    alert.titleFont = titleModel.titleFont;
-    alert.titleColor = titleModel.titleColor;
-    alert.messageFont = titleModel.messageFont;
-    alert.messageColor = titleModel.messageColor;
     if (titleBlock) {
+        CGXAlertTitleModel *titleModel = [[CGXAlertTitleModel alloc] init];
         titleBlock(titleModel);
+        alert.titleFont = titleModel.titleFont;
+        alert.titleColor = titleModel.titleColor;
+        alert.messageFont = titleModel.messageFont;
+        alert.messageColor = titleModel.messageColor;
     }
-    alert.titleFont = titleModel.titleFont;
-    alert.titleColor = titleModel.titleColor;
-    alert.messageFont = titleModel.messageFont;
-    alert.messageColor = titleModel.messageColor;
     for (NSString* titleStr in butTitles) {
         UIAlertAction* action;
         CGXAlertActionModel *item = [[CGXAlertActionModel alloc] init];
@@ -92,7 +86,9 @@
                 selectBlock(title,message,item.title);
             }
         }];
-        [action setValue:item.titleColor forKey:@"_titleTextColor"];
+        if (actionModleBlock) {
+            [action setValue:item.titleColor forKey:@"_titleTextColor"];
+        }
         [alert addAction:action];
     }
     if ([self getIsIpad]) {

@@ -13,10 +13,10 @@
 		0499B35922CC809800CA1767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0499B35822CC809800CA1767 /* Assets.xcassets */; };
 		0499B35C22CC809800CA1767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0499B35A22CC809800CA1767 /* LaunchScreen.storyboard */; };
 		0499B35F22CC809800CA1767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499B35E22CC809800CA1767 /* main.m */; };
-		B51493E325ED1A4A00DBB15A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B51493E025ED1A4A00DBB15A /* README.md */; };
-		B51493E425ED1A4A00DBB15A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B51493E125ED1A4A00DBB15A /* LICENSE */; };
-		B51493E525ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B51493E225ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec */; };
 		D856B8F368766F86A2422A98 /* libPods-CGXAlertVIewController-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E26564131543C7732ECDB5 /* libPods-CGXAlertVIewController-OC.a */; };
+		E0F9CED3268E05C900CAF768 /* CGXAlertViewController-OC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E0F9CED0268E05C900CAF768 /* CGXAlertViewController-OC.podspec */; };
+		E0F9CED4268E05C900CAF768 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0F9CED1268E05C900CAF768 /* README.md */; };
+		E0F9CED5268E05C900CAF768 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0F9CED2268E05C900CAF768 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,12 @@
 		0499B35B22CC809800CA1767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0499B35D22CC809800CA1767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0499B35E22CC809800CA1767 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B51493E025ED1A4A00DBB15A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
-		B51493E125ED1A4A00DBB15A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
-		B51493E225ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CGXAlertViewController-OC.podspec"; path = "../../../CGXAlertViewController-OC.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4E26564131543C7732ECDB5 /* libPods-CGXAlertVIewController-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CGXAlertVIewController-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA22DD4CEEF66CA60E3D6676 /* Pods-CGXAlertVIewController-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGXAlertVIewController-OC.debug.xcconfig"; path = "Target Support Files/Pods-CGXAlertVIewController-OC/Pods-CGXAlertVIewController-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		D278F5412DC290B6A1B0CBFA /* Pods-CGXAlertVIewController-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGXAlertVIewController-OC.release.xcconfig"; path = "Target Support Files/Pods-CGXAlertVIewController-OC/Pods-CGXAlertVIewController-OC.release.xcconfig"; sourceTree = "<group>"; };
+		E0F9CED0268E05C900CAF768 /* CGXAlertViewController-OC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CGXAlertViewController-OC.podspec"; path = "../../../CGXAlertViewController-OC.podspec"; sourceTree = "<group>"; };
+		E0F9CED1268E05C900CAF768 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		E0F9CED2268E05C900CAF768 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		0499B34E22CC809700CA1767 /* CGXAlertVIewController-OC */ = {
 			isa = PBXGroup;
 			children = (
-				B51493DF25ED1A3C00DBB15A /* Podspec Metadata */,
+				E0F9CECF268E05BD00CAF768 /* Podspec Metadata */,
 				0499B34F22CC809700CA1767 /* AppDelegate.h */,
 				0499B35022CC809700CA1767 /* AppDelegate.m */,
 				0499B35222CC809700CA1767 /* ViewController.h */,
@@ -93,12 +93,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B51493DF25ED1A3C00DBB15A /* Podspec Metadata */ = {
+		E0F9CECF268E05BD00CAF768 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				B51493E225ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec */,
-				B51493E125ED1A4A00DBB15A /* LICENSE */,
-				B51493E025ED1A4A00DBB15A /* README.md */,
+				E0F9CED0268E05C900CAF768 /* CGXAlertViewController-OC.podspec */,
+				E0F9CED2268E05C900CAF768 /* LICENSE */,
+				E0F9CED1268E05C900CAF768 /* README.md */,
 			);
 			path = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -170,12 +170,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F9CED5268E05C900CAF768 /* LICENSE in Resources */,
 				0499B35C22CC809800CA1767 /* LaunchScreen.storyboard in Resources */,
 				0499B35922CC809800CA1767 /* Assets.xcassets in Resources */,
-				B51493E325ED1A4A00DBB15A /* README.md in Resources */,
-				B51493E525ED1A4A00DBB15A /* CGXAlertViewController-OC.podspec in Resources */,
+				E0F9CED4268E05C900CAF768 /* README.md in Resources */,
 				0499B35722CC809700CA1767 /* Main.storyboard in Resources */,
-				B51493E425ED1A4A00DBB15A /* LICENSE in Resources */,
+				E0F9CED3268E05C900CAF768 /* CGXAlertViewController-OC.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
